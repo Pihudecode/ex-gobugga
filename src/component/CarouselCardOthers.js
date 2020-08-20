@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class CarouselCard extends Component {
+class CarouselCardOthers extends Component {
   render() {
-    const { containerClass, coverImage, label, title, personImage, personName, personRole, downloadCount } = this.props;
+    const { coverImage, label, title, personImage, personName, personRole, downloadCount } = this.props;
     return (
-      <div className={containerClass}>
-        <div className="section">
+      <div>
+        <div className="slider-item">
           <img src={coverImage} alt="" />
-          <div className="label">{label}</div>
+          <div className="label2">{label}</div>
           <div className="sec-title">{title}</div>
           <div className="rating">
             <i className="fas fa-star"></i>
@@ -36,11 +36,6 @@ class CarouselCard extends Component {
               <div className="sec-subtitle">Downloaded by</div>
               <div className="sec-person">{downloadCount}</div>
             </div>
-            <div className="detail-wrap">
-              <div className="add-btn">
-                <a href="#section"> + Add</a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -48,4 +43,4 @@ class CarouselCard extends Component {
   }
 }
 
-export default CarouselCard;
+export default CarouselCardOthers;
